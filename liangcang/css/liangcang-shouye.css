@@ -1,0 +1,117 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style:none;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+.bg-photo{
+	background: url(../img/icon.png);
+}
+.header{
+	background: #25292e;position: relative;width: 100%;height: 60px;
+}
+.header-box{
+	height: 60px;width: 1000px;position: absolute;left: 50%;top: 0;margin-left: -500px;
+}
+.logo{
+	display: block;width: 95px;height: 38px;background: url(../img/icon.png);margin-top: 11px;float: left;
+}
+.header-box ul{
+	float: right;height: 56px;position: relative;
+}
+.header-box ul li{
+	float: left;font-size: 12px;height: 60px;line-height: 60px;
+}
+.sign-up{
+	margin-right: 8px;font-size:14px;letter-spacing: 1.1px;
+}
+.sign-up a{
+	color: #ccc;
+}
+#sign-in{
+	padding-right: 15px;
+}
+
+.header-gouwu>a{
+	color: #666;display: inline-block;height: 60px;line-height: 60px;padding: 0 15px;letter-spacing: 1.1px;
+}
+.header-box ul li.line{
+	width: 1px;height: 8px;background: #525961;margin-top: 27px;
+}
+.header-body{
+	width: 100%;position: relative;
+}
+.header-body-box{
+	width: 1000px;position: absolute;left: 50%;margin-left: -500px;
+}
+.header-body-box-top{
+	position: relative;height: 49px;
+}
+.header-body-box-top>ul{
+	width: 774px;
+	height: 49px;
+	float: left;
+}
+.search{
+	height: 45px;float: left;
+	width: 226px;
+	border-bottom: 4px solid gainsboro;
+}
+#search-logo{
+	display: block;width: 33px;height: 40px;background-position: -167px -145px;background-color: #fff;float: right;
+	margin-right: 13px;
+}
+.header-body-box-top>ul>li{
+	float: left;height: 45px;line-height: 46px;width: 164px;border-bottom: 4px solid gainsboro;
+}
+.header-body-box-top>ul>li>a{
+	color: #333;
+}
+.header-body-box-top>ul>li.homePage{
+	width: 118px;
+}
+.subLi{
+	text-align: center;
+}
+.header-body-box-lunbotu{
+	width: 1000px;height: 475px;position: relative;overflow: hidden;	
+}
+.images-box{
+	position:absolute;height: 475px;top: 0;width: 5000px;z-index: 1;
+}
+.images-box>ul>li{
+	width: 1000px;height:475px;float: left;
+}
+.btn{
+	position: absolute;top: 50%;z-index: 10;width: 50px;height: 50px;cursor: pointer;margin-top: -25px;
+}
+#btn-left,#btn-right{
+	border-radius: 100%;background: rgba(0,0,0,0.3);
+}
+#btn-right{
+	right: 32px;
+}
+#btn-left{
+	left: 32px;
+}
+#btn-left>div{
+	background: url(../img/index/normal_right.png) 0px 0px no-repeat;width: 50px;height: 50px;
+}
+#btn-right>div{
+	background: url(../img/index/normal_left.png) 0px 0px  no-repeat;width: 50px;height: 50px;
+}
+.icon{
+	height: 18px;width: 1000px;padding: 7px 0;
+}
+.icon ul{
+	margin: auto;
+}
+.icon ul li{
+	width: 20px;height: 4px;background: #e8e8e8;float: left;
+}
