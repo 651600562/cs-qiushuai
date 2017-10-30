@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		/*界面初始化*/
+		*{margin: 0;padding: 0;}
+		body{background: #4F4A4A;}
+		a{color: #000000;text-decoration: none;}
+		img{border: none;}
+		
+			#bigbox{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			#bigbox table{
+				width: 565px;
+				margin: 0 auto;
+				padding-top: 110px;
+			}
+			#logo{
+				width: 565px;
+				height: 110px;
+				float: left;
+			}
+			#logo td{
+				width: 226px;
+				height: 110px;
+				float: left;
+				margin: 0 170px;
+			}
+			th{
+				width: 80px;
+				height: 50px;
+				float: left;
+				font-weight: bold;
+				color: #FFFFFF;
+			}
+			#phone{
+				width: 565px;
+				height: 50px;
+				float: left;
+			}
+			#phone
+		</style>
+	</head>
+	<body>
+		<div id="bigbox">
+			<table>
+				<tr id = "logo">
+					<td><a href="#"><img src="img/logo_icon.png"/></a></td>
+				</tr>
+				
+				<tr id = "phone">
+					<th>手机号</th>
+					<td class="entry">
+						<input value="请输入手机号"></input>
+					</td>
+					<td class="show"></td>
+				</tr>
+				
+				<tr id = "entry-code">
+					<th>验证码</th>
+					<td>
+						<input value="输入验证码"></input>
+						<div></div>
+					</td>
+					<td class="change">看不清换一张</td>
+				</tr>
+				
+				<tr id = "found-password">
+					<th>创建密码</th>
+					<td>
+						<input value="6-20位字符组成，区分大小写"></input>
+					</td>
+					<td class="strength"></td>
+				</tr>
+				
+				<tr id = "confirm-password">
+					<th>密码确认</th>
+					<td>
+						<input value="密码确认"></input>
+					</td>
+					<td class="reveal"></td>
+				</tr>
+				
+				<tr id = "auto-login">
+					<td>
+						<input type="checkbox"/>
+						<span>同意<a href="#">良仓注册条款</a></span>
+					</td>
+				</tr>
+				
+				<tr id = "register">
+					<td>
+						<input type="submit" name="" id="" value="立即注册" />
+					</td>
+				</tr>
+				
+				
+			</table>
+		</div>
+	</body>
+</html>
