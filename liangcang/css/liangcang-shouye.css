@@ -56,10 +56,66 @@ a{
 	display: block;
 }
 
-
+.subShop{
+				width: 1000px;
+				height: 500px;
+				position: absolute;
+				left: 0;
+				top: 48px;
+				display: none;
+				z-index: 8;
+				background: white;
+			}
+			.subShop ul{
+				width: 700px;
+				float: left;
+			}
+			.subShop ul li{
+				width: 100px;
+				height: 80px;
+				padding-top: 20px;
+				float: left;
+				
+			}
+			.subShop ul li img{
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin: 0 30px;
+			}
+			.subShop ul li span{
+				width: 30px;
+				height: 40px;
+				float: left;
+				margin: -20px 35px;
+				font-size:14px;
+				font-weight: bold;
+			}
+			.newShow{
+				width: 232px;
+				height:232px;
+				float: right;
+				margin-top: 50px;
+			}
+			.newShow img{
+				width: 232px;
+				height:232px;
+				float: left;
+			}
+			.newShow span{
+				font: 14px/30px "微软雅黑";
+				color: #000;
+			}
+			.subLi:hover .subShop{
+				display: block;
+			}
 
 .logo{
 	display: block;width: 95px;height: 38px;background: url(../img/icon.png);margin-top: 11px;float: left;
+	
+}
+.logo:hover{
+	opacity: 0.7;
 }
 .header-box>ul{
 	float: right;height: 56px;position: relative;
@@ -100,12 +156,25 @@ a{
 .search{
 	height: 45px;float: left;
 	width: 266px;
-	border-bottom: 4px solid gainsboro;
+	border-bottom: 4px solid gainsboro;cursor: pointer;
 }
 #search-logo{
 	display: block;width: 33px;height: 40px;background-position: -167px -145px;background-color: #fff;float: right;
-	margin-right: 13px;
+	margin-right: 13px;position: absolute;right: 0;top: 1px;
 }
+.search-box{
+	position: relative;height: 49px;width: 266px;overflow: hidden;
+	
+}
+.search-input{
+	position: relative;top: 0;width: 260px;height: 45px;border-bottom: 4px solid #25292E;
+	background: transparent;text-align: left;overflow: hidden;
+}
+.search-input input{
+	width: 188px;height: 30px;border: 0;padding-left: 4px;line-height: 30px;resize: none;outline: none;
+	position: relative;left: 4px;top: 8px;font: 16px arial;
+}
+
 .header-body-box-top>ul>li{
 	float: left;height: 45px;line-height: 46px;width: 164px;border-bottom: 4px solid gainsboro;
 }
@@ -127,6 +196,9 @@ a{
 .header-body-box-lunbotu{
 	width: 1000px;height: 475px;position: relative;	overflow: hidden;
 }
+.header-body-box-lunbotu:hover .btn{
+	display: block;
+}
 .images-box{
 	position:absolute;height: 475px;top: 0;width: 5000px;z-index: 1;
 }
@@ -135,6 +207,7 @@ a{
 }
 .btn{
 	position: absolute;top: 50%;z-index: 10;width: 50px;height: 50px;cursor: pointer;margin-top: -25px;
+	display: none;
 }
 #btn-left,#btn-right{
 	border-radius: 100%;background: rgba(0,0,0,0.3);
@@ -152,7 +225,7 @@ a{
 	background: url(../img/index/normal_left.png) 0px 0px  no-repeat;width: 50px;height: 50px;
 }
 .icon{
-	height: 18px;width: 130px;padding: 7px 435px;position: absolute;top: 524px;
+	height: 18px;width: 130px;padding: 7px 435px;position: relative;
 }
 
 .icon>ul>li{
@@ -160,4 +233,37 @@ a{
 }
 .icon ul li.current{
 	background: #25292E;
+}
+
+
+
+.header-body-box-bottom{
+	width: 1000px;height: 403px;margin-top: 12px;position: relative;
+}
+.item1{
+	width: 317px;height: 190px;position: absolute;
+}
+.item2{
+	width: 318px;height: 403px;position: absolute;left: 340px;top: 0;
+}
+
+
+
+
+
+
+.renqi{
+	padding: 10px 0px;border-bottom: 1px solid #ccc;text-align: center;color: #333;width: 100%;
+	margin: 36px 0 20px 0;font-size: 13px;
+}
+
+
+.shopShow{
+	position: relative;width: 1000px;height: auto;
+}
+.shopShow div.first{
+	margin-left: 0;
+}
+.item{
+	width: 316px;height: 366px;margin: 0 0 30px 26px;float: left;
 }
