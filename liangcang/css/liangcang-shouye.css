@@ -1,0 +1,269 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style:none;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+.bg-photo{
+	background: url(../img/icon.png);
+}
+.header{
+	background: #25292e;position: relative;width: 100%;height: 60px;
+}
+.header-box{
+	height: 60px;width: 1000px;position: absolute;left: 50%;top: 0;margin-left: -500px;
+}
+
+.header-gouwu-caidan{
+	position: absolute;top: 60px;width: 320px;height: 120px;z-index: 3;left: -29px;display: none;
+}
+.header-gouwu-caidan ul li.header-gouwu-caidan-up{
+	width: 320px;height: 70px;background: #25292E;line-height: 70px;text-align: center;font-size: 14px;color: #fff;
+}
+.header-gouwu-caidan ul li.header-gouwu-caidan-down{
+	width: 320px;height: 50px;background: #7dbfde;line-height: 50px;text-align: center;font-size: 14px;color: #fff;
+}
+
+.header-box ul li.gouwuche:hover .header-gouwu-caidan{
+	display: block;
+}
+.header-gouwu-news{
+	position: absolute;top: 60px;width: 190px;z-index: 9;left: 101px;display: none;
+}
+.header-gouwu-news>ul>li{
+	width: 160px;padding: 0 15px;background: #292f34;height: 45px;line-height: 44px;
+}
+.header-gouwu-news>ul>li.lastLi{
+	height: 44px;
+}
+.header-gouwu-news>ul>li>a{
+	display: block;width: 100%;height: 44px;line-height: 44px;border-bottom: 1px solid #3f4449;
+	color: #ccc;font-size: 12px;letter-spacing: 1.5px;
+}
+.header-gouwu-news>ul>li>a>span{
+	float: right;
+}
+.header-box ul li:hover a{
+	color: #ccc;animation: all 1s;
+}
+.header-box ul li.news:hover .header-gouwu-news{
+	display: block;
+}
+
+.subShop{
+				width: 1000px;
+				height: 500px;
+				position: absolute;
+				left: 0;
+				top: 48px;
+				display: none;
+				z-index: 8;
+				background: white;
+			}
+			.subShop ul{
+				width: 700px;
+				float: left;
+			}
+			.subShop ul li{
+				width: 100px;
+				height: 80px;
+				padding-top: 20px;
+				float: left;
+				
+			}
+			.subShop ul li img{
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin: 0 30px;
+			}
+			.subShop ul li span{
+				width: 30px;
+				height: 40px;
+				float: left;
+				margin: -20px 35px;
+				font-size:14px;
+				font-weight: bold;
+			}
+			.newShow{
+				width: 232px;
+				height:232px;
+				float: right;
+				margin-top: 50px;
+			}
+			.newShow img{
+				width: 232px;
+				height:232px;
+				float: left;
+			}
+			.newShow span{
+				font: 14px/30px "微软雅黑";
+				color: #000;
+			}
+			.subLi:hover .subShop{
+				display: block;
+			}
+
+.logo{
+	display: block;width: 95px;height: 38px;background: url(../img/icon.png);margin-top: 11px;float: left;
+	
+}
+.logo:hover{
+	opacity: 0.7;
+}
+.header-box>ul{
+	float: right;height: 56px;position: relative;
+}
+.header-box>ul>li{
+	float: left;font-size: 12px;height: 60px;line-height: 60px;
+}
+.sign-up{
+	margin-right: 8px;font-size:14px;letter-spacing: 1.1px;
+}
+.sign-up a{
+	color: #ccc;
+}
+#sign-in{
+	padding-right: 15px;
+}
+
+.header-gouwu>a{
+	color: #666;display: inline-block;height: 60px;line-height: 60px;padding: 0 15px;letter-spacing: 1.1px;
+}
+.header-box ul li.line{
+	width: 1px;height: 8px;background: #525961;margin-top: 27px;
+}
+.header-body{
+	width: 100%;position: relative;
+}
+.header-body-box{
+	width: 1000px;position: absolute;left: 50%;margin-left: -500px;
+}
+.header-body-box-top{
+	position: relative;height: 49px;
+}
+.header-body-box-top>ul{
+	width: 734px;
+	height: 49px;
+	float: left;
+}
+.search{
+	height: 45px;float: left;
+	width: 266px;
+	border-bottom: 4px solid gainsboro;cursor: pointer;
+}
+#search-logo{
+	display: block;width: 33px;height: 40px;background-position: -167px -145px;background-color: #fff;float: right;
+	margin-right: 13px;position: absolute;right: 0;top: 1px;
+}
+.search-box{
+	position: relative;height: 49px;width: 266px;overflow: hidden;
+	
+}
+.search-input{
+	position: relative;top: 0;width: 260px;height: 45px;border-bottom: 4px solid #25292E;
+	background: transparent;text-align: left;overflow: hidden;
+}
+.search-input input{
+	width: 188px;height: 30px;border: 0;padding-left: 4px;line-height: 30px;resize: none;outline: none;
+	position: relative;left: 4px;top: 8px;font: 16px arial;
+}
+
+.header-body-box-top>ul>li{
+	float: left;height: 45px;line-height: 46px;width: 164px;border-bottom: 4px solid gainsboro;
+}
+.header-body-box-top>ul>li:hover{
+	border-bottom-color: #25292E;
+}
+.header-body-box-top>ul>li>a{
+	color: #333;
+}
+.header-body-box-top>ul>li.homePage{
+	width: 121px;
+}
+.header-body-box-top>ul>li.daren{
+	width: 121px;
+}
+.subLi{
+	text-align: center;
+}
+.header-body-box-lunbotu{
+	width: 1000px;height: 475px;position: relative;	overflow: hidden;
+}
+.header-body-box-lunbotu:hover .btn{
+	display: block;
+}
+.images-box{
+	position:absolute;height: 475px;top: 0;width: 5000px;z-index: 1;
+}
+.images-box>ul>li{
+	width: 1000px;height:475px;float: left;
+}
+.btn{
+	position: absolute;top: 50%;z-index: 10;width: 50px;height: 50px;cursor: pointer;margin-top: -25px;
+	display: none;
+}
+#btn-left,#btn-right{
+	border-radius: 100%;background: rgba(0,0,0,0.3);
+}
+#btn-right{
+	right: 32px;
+}
+#btn-left{
+	left: 32px;
+}
+#btn-left>div{
+	background: url(../img/index/normal_right.png) 0px 0px no-repeat;width: 50px;height: 50px;
+}
+#btn-right>div{
+	background: url(../img/index/normal_left.png) 0px 0px  no-repeat;width: 50px;height: 50px;
+}
+.icon{
+	height: 18px;width: 130px;padding: 7px 435px;position: relative;
+}
+
+.icon>ul>li{
+	width: 20px;height: 4px;background: #e8e8e8;float: left;margin: 0 3px;
+}
+.icon ul li.current{
+	background: #25292E;
+}
+
+
+
+.header-body-box-bottom{
+	width: 1000px;height: 403px;margin-top: 12px;position: relative;
+}
+.item1{
+	width: 317px;height: 190px;position: absolute;
+}
+.item2{
+	width: 318px;height: 403px;position: absolute;left: 340px;top: 0;
+}
+
+
+
+
+
+
+.renqi{
+	padding: 10px 0px;border-bottom: 1px solid #ccc;text-align: center;color: #333;width: 100%;
+	margin: 36px 0 20px 0;font-size: 13px;
+}
+
+
+.shopShow{
+	position: relative;width: 1000px;height: auto;
+}
+.shopShow div.first{
+	margin-left: 0;
+}
+.item{
+	width: 316px;height: 366px;margin: 0 0 30px 26px;float: left;
+}
