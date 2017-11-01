@@ -6,8 +6,9 @@
 		<style>
 		/*界面初始化*/
 		*{margin: 0;padding: 0;}
-		body{background: #4F4A4A;}
+		body{background: #999;}
 		a{color: #000000;text-decoration: none;}
+		li{list-style: none;}
 		img{border: none;}
 		
 			#bigbox{
@@ -28,21 +29,121 @@
 				width: 226px;
 				height: 110px;
 				float: left;
-				margin: 0 170px;
+				margin: 0 140px;
+			}
+			tr{
+				width: 565px;
+				height: 40px;
+				float: left;
+				margin:10px ;
 			}
 			th{
 				width: 80px;
 				height: 50px;
 				float: left;
+				font: 14px/50px "微软雅黑";
 				font-weight: bold;
 				color: #FFFFFF;
 			}
-			#phone{
-				width: 565px;
-				height: 50px;
+			td{
 				float: left;
 			}
-			#phone
+			input{
+				width: 300px;
+				height: 30px;
+				border: none;
+				outline: none;
+				font: 14px/30px "微软雅黑";
+				color: #fff;
+				background:#CCCCCC;
+				font-weight: bold;
+				padding: 10px;
+				
+			}
+			
+			#entry-code input{
+				width: 225px;
+				float: left;
+			}
+			#idcode{
+				width: 50px;
+				height: 20px;
+				background: white;
+				border: 1px solid red;
+				margin: 15px 5px 0 15px;
+				float: left;
+			}
+			.change{
+				font:12px/50px "微软雅黑";
+				color: #FFFFFF;
+			}
+			.change a{
+				color: #FFFFFF;
+			}
+			.strength{
+				width: 127px;
+				height: 30px;
+				float: left;
+				margin: 10px;
+			}
+			.strengthColor{
+				width: 127px;
+				height: 12px;
+				float: left;
+				background: url(img/block_bg_gray_266.png);
+			}
+			.strengthText{
+				width: 127px;
+				height: 12px;
+				float: left;
+			}
+			.strengthText span{
+				width: 41px;
+				height: 12px;
+				float: left;
+				font-size: 12px;
+				text-align: center;
+				color: #4c4c4c;
+			}
+			#clause td{
+				width: 320px;
+				font: 12px/20px "微软雅黑";
+				color: white;
+				margin-top: 30px;
+			}
+			#clause input{
+				width: 12px;
+				height: 12px;
+				float: left;
+				margin: 5px 10px 0 0;
+			}
+			#clause a{
+				color: #0c79cc;
+			}
+			#register input{
+				width: 320px;
+				height: 50px;
+				padding: 0;
+				margin: 0;
+				background: black;
+				opacity: 0.8;
+				font: 18px/50px "微软雅黑";
+				font-weight: bold;
+				cursor: pointer;
+			}
+			#more-register td{
+				width: 320px;
+				margin-top: 10px;
+				font-weight: bold;
+			}
+			#more-register ul li{
+				float: left;
+				margin-left: 10px;
+				padding-top: 5px;
+			}
+			.login a{
+				color: white;
+			}
 		</style>
 	</head>
 	<body>
@@ -55,7 +156,7 @@
 				<tr id = "phone">
 					<th>手机号</th>
 					<td class="entry">
-						<input value="请输入手机号"></input>
+						<input value="请输入手机号" id = "phoneText"></input>
 					</td>
 					<td class="show"></td>
 				</tr>
@@ -63,43 +164,70 @@
 				<tr id = "entry-code">
 					<th>验证码</th>
 					<td>
-						<input value="输入验证码"></input>
-						<div></div>
+						<input value="输入验证码" id ="Txtidcode"></input>
+						<span id="idcode"></span>
 					</td>
-					<td class="change">看不清换一张</td>
+					<td class="change">点击图片更换</td>
 				</tr>
 				
 				<tr id = "found-password">
 					<th>创建密码</th>
-					<td>
-						<input value="6-20位字符组成，区分大小写"></input>
+					<td class="passWord">
+						<input type="text" value="6-20位字符组成，区分大小写" id = "passwordTxet"></input>
 					</td>
-					<td class="strength"></td>
+					<td class="strength">
+						<div class="strengthColor"></div>
+						<div class="strengthText">
+							<span class="strength-left">弱</span>
+							<span class="strength-center">中</span>
+							<span class="strength-right">强</span>
+						</div>
+					</td>
 				</tr>
 				
 				<tr id = "confirm-password">
 					<th>密码确认</th>
-					<td>
-						<input value="密码确认"></input>
+					<td class="passWordConfirm">
+						<input type="text" value="密码确认"></input>
 					</td>
 					<td class="reveal"></td>
 				</tr>
 				
-				<tr id = "auto-login">
+				<tr id = "clause">
+					<th></th>
 					<td>
-						<input type="checkbox"/>
-						<span>同意<a href="#">良仓注册条款</a></span>
+						<input type="checkbox" id = "checkBox"/>
+						<span>同意 <a href="#"> 良仓注册条款</a></span>
 					</td>
 				</tr>
 				
 				<tr id = "register">
+					<th></th>
 					<td>
-						<input type="submit" name="" id="" value="立即注册" />
+						<input type="submit" name="" id="onRegister" value="立即注册" />
 					</td>
 				</tr>
 				
+				<tr id = "more-register">
+					<th></th>
+					<td>
+						<ul>
+							<li><a href="#"><img src="img/qqnormal.png"/></a></li>
+							<li><a href="#"><img src="img/xinlangmouse.png"/></a></li>
+							<li><a href="#"><img src="img/doubannormal.png"/></a></li>
+							<li><a href="#"><img src="img/tengxunnormal.png"/></a></li>
+							<li class="login" style="float: right;border-bottom: 1px solid white;padding-bottom: 5px;padding-top: 0;"><a href="#">登录良仓</a></li>
+						</ul>
+					</td>
+				</tr>
 				
 			</table>
 		</div>
 	</body>
+	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.idcode.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/register.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+	
+	</script>
 </html>
