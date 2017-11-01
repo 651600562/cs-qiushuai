@@ -203,9 +203,10 @@ a{
 .header-body-box-top>ul>li{
 	float: left;height: 45px;line-height: 46px;width: 164px;border-bottom: 4px solid gainsboro;
 }
-.header-body-box-top>ul>li:hover{
+.header-body-box-top>ul>li.active{
 	border-bottom-color: #25292E;
 }
+
 .header-body-box-top>ul>li>a{
 	color: #333;
 }

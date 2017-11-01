@@ -1,49 +1,4 @@
 
-var url = "http://h6.duchengjiu.top/shop/api_cat.php"
-var oShop = document.getElementById("shop")
-var oSpan = oShop.getElementsByTagName("span")
-
-$.get(url,function(obj){
-	
-	console.log(obj)
-	for (var i = 0; i < obj.data.length; i++) {
-		
-		oSpan[i].innerHTML= obj.data[i].cat_name
-	}
-
-})
-var oShopBox = document.getElementById("shop-box")
-
-
-
-
-
-//<div class="item"><div class="item-img"><img src=""/><a href='#'><div class='item-bg'><h2></h2><h3></h3></div></div></a>
-//<a href="#"><p></p></a></div>
-var url2 ="http://h6.duchengjiu.top/shop/api_goods.php"
-$.get(url2,function(obj){
-	
-	console.log(obj)
-	var h = "";
-	for (var i = 0; i < obj.data.length; i++) {
-		
-		if (i%3 == 0) {
-			h += "<div class='item first'><div class='item-img'><img src='"
-		} else{
-			h += "<div class='item'><div class='item-img'><img src='"
-		}
-		h += obj.data[i].goods_thumb
-		h += "'/><a href='#'><div class='item-bg'><h2>￥"
-		h += obj.data[i].price
-		h += "</h2><h3>"
-		h += obj.data[i].goods_desc
-		h += "</h3></div></div></a><a href='#'><p>"
-		h += obj.data[i].goods_name
-		h += "</p></a></div>"
-		
-	}
-	$(oShopBox).html(h)
-})
 
 
 
@@ -69,18 +24,40 @@ var oDaohang = document.getElementById("header-box-top")
 	$(document).scroll(function() {
 	
 	var top = $(document).scrollTop();
-	
-	if (top>100) {
+	if (top<190) {
+		$(oHeader).stop(true,false).animate({top: "0px"},200);
+		$(oDaohang).stop(true,false).animate({top: "60px"},200);
+	}
+	if (top>200) {
+		
 		$(oTop).fadeIn(500)
-		$(oHeader).animate({top: "-60px"});
-		$(oDaohang).animate({top: "0px"});
+		$(document).mousewheel(function(e){
+			
+			if ($(oHeader).is(":animated")) {
+				return ;
+			}
+			if ($(oDaohang).is(":animated")) {
+				return ;
+			}
+	    	if (e.deltaY > 0) {
+	    		
+	    		$(oHeader).stop(true,false).animate({top: "0px"});
+				$(oDaohang).stop(true,false).animate({top: "60px"});
+	    	} else if(e.deltaY < 0){
+	    		$(oHeader).stop(true,false).animate({top: "-60px"});
+				$(oDaohang).stop(true,false).animate({top: "0px"});
+	    		
+	    	}  
+   		})
 	} else{
 		$(oTop).stop(true,false).fadeOut(500)
-		$(oHeader).stop(true,false).animate({top: "0px"});
-		$(oDaohang).stop(true,false).animate({top: "60px"});
+		
 	}
 	
 })
+
+    
+
 
 var state = true;
 $("#search-logo").click(function(){
@@ -108,5 +85,40 @@ $(oHand).mouseover(function(){
 				$(oHand).animate({"left":"0px"},300)
 			})
 		})
+	})
+})
+
+var url = "http://h6.duchengjiu.top/shop/api_cat.php"
+var oShop = document.getElementById("shop")
+var oSpan = oShop.getElementsByTagName("span")
+
+$.get(url,function(obj){
+	
+	
+	for (var i = 0; i < obj.data.length; i++) {
+		
+		oSpan[i].innerHTML= obj.data[i].cat_name
+	}
+
+})
+
+
+
+$("#header-box-top>ul>li").each(function(index){
+	
+	$(this).mouseover(function(){
+		$("#header-box-top ul li").removeClass("active")
+		$(this).addClass("active")
+		
+	})
+	$(this).mouseout(function(){
+		$("#header-box-top>ul>li").removeClass("active")
+		$($("#header-box-top>ul>li")[p]).addClass("active")
+		
+	})
+	$(this).click(function(){
+		$("#header-box-top>ul>li").removeClass("active")
+		$(this).addClass("active")
+		p = index
 	})
 })

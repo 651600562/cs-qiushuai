@@ -9,7 +9,7 @@ var oBtnRight = document.getElementById("btn-right")
 
 
 function imgMove(){
-	$("#move-box").animate({"left":-i*w},1000,function(){
+	$("#move-box").animate({"left":-i*w},300,function(){
 				
 				if (i>5) {
 					i=1
@@ -63,6 +63,7 @@ $("#icon1 ul li").mouseover(function(){
 
 
 $("#icon1 ul li").mouseout(function(){
+	clearInterval(t)
 	t = setInterval(function(){
 	i++;
 	imgMove()
@@ -74,6 +75,7 @@ $(oBigBox).mouseover(function(){
 })
 
 $(oBigBox).mouseout(function(){
+	clearInterval(t)	
 	t = setInterval(function(){
 	i++;
 	imgMove()

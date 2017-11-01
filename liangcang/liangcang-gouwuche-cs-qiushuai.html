@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title>良仓.美好生活</title>
-		<link href="css/liangcang-shouye.css" rel="stylesheet"/>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="css/liangcang-shouye.css" rel="stylesheet" />
+		<link href="css/liangcang-gouwuche.css" rel="stylesheet" />
+		
 	</head>
 	<body>
 		<div id="talk"><a href="javascript:">联系客服</a></div>
@@ -57,9 +59,9 @@
 			<div class="header-body-box">
 				<div class="header-body-box-top" id="header-box-top">
 					<ul>
-						<li class="homePage"><a href="http://127.0.0.1:8020/liangcang/liangcang-shouye-cs-qiushuai.html?__hbt=1509526749307">首页</a></li>
+						<li class="homePage"><a href="#">首页</a></li>
 						<li class="subLi">
-							<a href="http://127.0.0.1:8020/liangcang/liangcang-shop-cs-qiushuai.html?__hbt=1509525126993">商店</a>
+							<a href="#">商店</a>
 							<div class="subShop" id="shop">
 								<ul>
 									<li>
@@ -236,61 +238,67 @@
 						<a id="search-logo" class="bg-photo"></a>
 					</div>
 				</div>
-				<div class="header-body-box-lunbotu" id="big-box">
-					<div class="images-box" style="margin-top: 23px;" id="move-box">
-						<ul>
-							<li><a href="#"><img src="img/index/current5.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current1.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current2.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current3.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current4.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current5.jpg" /></a></li>
-							<li><a href="#"><img src="img/index/current1.jpg" /></a></li>
-						</ul>
-					</div>
-					<div class="btn" id="btn-left">
-						<div></div>
-					</div>
-					<div class="btn" id="btn-right">
-						<div></div>
-					</div>
-					
-				</div>
-				<div class="icon" id="icon1">
-					<ul>
-						<li class="current"></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-				</div>
-				<div class="header-body-box-bottom">
-					<div class="item1" style="top: 0;left: 0;">
-						<a href="#"><img src="img/index/良仓_04.png"/></a>
-					</div>
-					<div class="item2">
-						<a href="#"><img src="img/index/良仓_06.png"/></a>
-					</div>
-					<div class="item1" style="top: 0;right: 0;">
-						<a href="#"><img src="img/index/良仓_08.png"/></a>
-					</div>
-					<div class="item1" style="bottom: 0;left: 0;">
-						<a href="#"><img src="img/index/良仓_12.png"/></a>
-					</div>
-					<div class="item1" style="bottom: 0;right: 0;">
-						<a href="#"><img src="img/index/良仓_13.png"/></a>
-					</div>
-				</div>
-				<div class="renqi">
-					人气良品
-				</div>
 				
+				<div id="shopingStep">
+					|	
+					<div class="item3">
+						<span class="txt chk">购物车</span>
+					</div>
+					|
+					<div class="item3">
+						<span class="txt">付款</span>
+					</div>
+					|
+				</div>
+				<div id="shopingcarlist">
+					<table class="carTab">
+						<tbody>
+							<tr>
+								<th class="txt1" width="110">
+									<input type="checkbox" class="chkbox" />全选
+								</th>
+								<th width="300">良品</th>
+								<th width="120">数量</th>
+								<th width="160">单价（元）</th>
+								<th width="160">小计（元）</th>
+								<th>操作</th>
+							</tr>
+							<tr id="itemlist2"></tr>
+						</tbody>
+					</table>
+				</div>
+				<div id="shopingcarOpt">
+					<form action="/i/shoppingcar/submit/" method="post" id="cartForm" name="cartForm">
+						
+						<input type="hidden" value="0.00" id="payMoney"/>
+						<p>
+							良品总价
+							<font style="font-size:18px;">/</font>
+							<span class="priceNo">
+								¥
+								<font id="payMoneyTxt">0.00</font>
+							</span>
+						</p>
+						<p>
+							<input type="button" id="checkoutBtn" value="立即结算" onclick="jiesuan()"/>
+						</p>
+						<p>
+							
+						</p>
+						<fieldset>
+							<legend>
+								<a href="#">继续购物</a>
+							</legend>
+							
+							
+						</fieldset>
+					</form>
+				</div>
 				<div class="shopShow" id="shop-box">
 					
 				</div>
 				<div id="pagers">
-					<a href="http://127.0.0.1:8020/liangcang/liangcang-shop-cs-qiushuai.html?__hbt=1509525126993" target="_blank" class="more bg-photo"></a>
+					<a href="#" target="_blank" class="more bg-photo"></a>
 					
 				</div>
 				
@@ -339,14 +347,12 @@
 		</div>
 		
 		
+	
 	</body>
 </html>
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/jquery.mousewheel.js"></script>
 <script src="js/liangcang-shouye.js"></script>
-<script src="js/lunbotu.js"></script>
-<script src="js/getShops.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	var p = 0;
-	$($("#header-box-top>ul>li")[p]).addClass("active")
+	var p = 8
 </script>
