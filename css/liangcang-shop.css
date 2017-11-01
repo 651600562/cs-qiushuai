@@ -1,0 +1,292 @@
+*{
+	margin: 0;padding: 0;
+}
+li{
+	list-style:none;
+}
+img{
+	border: none;
+}
+a{
+	text-decoration: none;
+}
+#goUp{
+	position: fixed;bottom: 50px;right: 30px;width: 59px;height: 59px;background-position: -20px -813px;
+	cursor: pointer;display: none;z-index: 9999;
+}
+#talk{
+	font-size: 13px;
+    position: fixed;
+    bottom: 0;
+    right: 14px;
+	z-index: 8888;
+}
+#talk a{
+	    background-color: #5b799a;    
+	    display: block;
+	    color: #fff;
+	    width: 90px;
+	    height: 30px;
+	    line-height: 30px;
+	    border-radius: 4px;
+	    text-decoration: none;
+	    font-size: 13px;
+	    text-align: center;
+	    
+}
+.bg-photo{
+	background: url(../img/icon.png) no-repeat;
+}
+.header{
+	background: #25292e;position: fixed;width: 100%;height: 60px;top: 0;z-index: 8888;
+}
+.header-box{
+	height: 60px;width: 1000px;position: absolute;left: 50%;top: 0;margin-left: -500px;
+}
+
+.header-gouwu-caidan{
+	position: absolute;top: 60px;width: 320px;height: 120px;z-index: 9999;left: -29px;display: none;
+}
+.header-gouwu-caidan ul li.header-gouwu-caidan-up{
+	width: 320px;height: 70px;background: #25292E;line-height: 70px;text-align: center;font-size: 14px;color: #fff;
+}
+.header-gouwu-caidan ul li.header-gouwu-caidan-down{
+	width: 320px;height: 50px;background: #7dbfde;line-height: 50px;text-align: center;font-size: 14px;color: #fff;
+}
+
+.header-box ul li.gouwuche:hover .header-gouwu-caidan{
+	display: block;
+}
+.header-gouwu-news{
+	position: absolute;top: 60px;width: 190px;z-index: 9999;left: 101px;display: none;
+}
+.header-gouwu-news>ul>li{
+	width: 160px;padding: 0 15px;background: #292f34;height: 45px;line-height: 44px;
+}
+.header-gouwu-news>ul>li.lastLi{
+	height: 44px;
+}
+.header-gouwu-news>ul>li>a{
+	display: block;width: 100%;height: 44px;line-height: 44px;border-bottom: 1px solid #3f4449;
+	color: #ccc;font-size: 12px;letter-spacing: 1.5px;
+}
+.header-gouwu-news>ul>li>a>span{
+	float: right;
+}
+.header-box ul li:hover a{
+	color: #ccc;animation: all 1s;
+}
+.header-box ul li.news:hover .header-gouwu-news{
+	display: block;
+}
+
+.subShop{
+				width: 1000px;
+				height: 500px;
+				position: absolute;
+				left: 0;
+				top: 48px;
+				display: none;
+				z-index: 8;
+				background: white;
+			}
+			.subShop ul{
+				width: 700px;
+				float: left;
+			}
+			.subShop ul li{
+				width: 100px;
+				height: 80px;
+				padding-top: 20px;
+				float: left;
+				
+			}
+			.subShop ul li img{
+				width: 40px;
+				height: 40px;
+				float: left;
+				margin: 0 30px;
+			}
+			.subShop ul li span{
+				width: 30px;
+				height: 40px;
+				float: left;
+				margin: -20px 35px;
+				font-size:14px;
+				font-weight: bold;
+				color: #4d4d4d;
+			}
+			.newShow{
+				width: 232px;
+				height:232px;
+				float: right;
+				margin-top: 50px;
+			}
+			.newShow img{
+				width: 232px;
+				height:232px;
+				float: left;
+			}
+			.newShow span{
+				font: 14px/30px "微软雅黑";
+				color: #000;
+			}
+			.subLi:hover .subShop{
+				display: block;
+			}
+
+.logo{
+	display: block;width: 95px;height: 38px;background: url(../img/icon.png);margin-top: 11px;float: left;
+	
+}
+.logo:hover{
+	opacity: 0.7;
+}
+.header-box>ul{
+	float: right;height: 56px;position: relative;
+}
+.header-box>ul>li{
+	float: left;font-size: 12px;height: 60px;line-height: 60px;
+}
+.sign-up{
+	margin-right: 8px;font-size:14px;letter-spacing: 1.1px;
+}
+.sign-up a{
+	color: #ccc;
+}
+#sign-in{
+	padding-right: 15px;
+}
+
+.header-gouwu>a{
+	color: #666;display: inline-block;height: 60px;line-height: 60px;padding: 0 15px;letter-spacing: 1.1px;
+}
+.header-box ul li.line{
+	width: 1px;height: 8px;background: #525961;margin-top: 27px;
+}
+.header-body{
+	width: 100%;position: relative;
+}
+.header-body-box{
+	width: 1000px;position: relative;left: 50%;margin-left: -500px;
+}
+.header-body-box-top{
+	position: fixed;height: 49px;top:60px;z-index:6666;background:white;
+}
+.header-body-box-top>ul{
+	width: 734px;
+	height: 49px;
+	float: left;
+}
+.search{
+	height: 45px;float: left;
+	width: 266px;
+	border-bottom: 4px solid gainsboro;cursor: pointer;
+}
+#search-logo{
+	display: block;width: 33px;height: 40px;background-position: -167px -145px;background-color: #fff;float: right;
+	margin-right: 13px;position: absolute;right: 0;top: 1px;
+}
+.search-box{
+	position: relative;height: 49px;width: 266px;overflow: hidden;
+	
+}
+.search-input{
+	position: relative;top: 0;width: 260px;height: 45px;border-bottom: 4px solid #25292E;
+	background: transparent;text-align: left;overflow: hidden;
+}
+.search-input input{
+	width: 188px;height: 30px;border: 0;padding-left: 4px;line-height: 30px;resize: none;outline: none;
+	position: relative;left: 4px;top: 8px;font: 16px arial;
+}
+
+.header-body-box-top>ul>li{
+	float: left;height: 45px;line-height: 46px;width: 164px;border-bottom: 4px solid gainsboro;
+}
+.header-body-box-top>ul>li:hover{
+	border-bottom-color: #25292E;
+}
+.header-body-box-top>ul>li>a{
+	color: #333;
+}
+.header-body-box-top>ul>li.homePage{
+	width: 121px;
+}
+.header-body-box-top>ul>li.daren{
+	width: 121px;
+}
+.subLi{
+	text-align: center;
+}
+
+#main{
+	width:1000px;
+	height: 1000px;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 110px;
+}
+.album{
+	width: 410px;
+	float: left;
+	padding: 5px;
+	
+}
+.bigShow{
+	width: 350px;
+	height: 350px;
+	float: left;
+	
+}
+.bigShow img{
+	width: 350px;
+	height: 350px;
+	float: left;
+}
+
+
+.little-show{
+	width: 410px;
+	height: 70px;
+	float: left;
+	margin-top: 10px;
+	margin-left: -30px;
+	position: relative;
+}
+.img-box{
+	width: 350px;
+	height: 70px;
+	float: left;
+	margin-left: 30px;
+	overflow: hidden;
+}
+.pre{
+	width:30px; height: 62px;  position: absolute;background: #FFFFFF;
+	left: 0; top: 0; font-size: 40px; line-height: 63px; color: red;
+	text-align: center;
+}
+.next{
+	width:30px; height: 62px;  position: absolute;background: #FFFFFF;
+	right: 0; top: 0; font-size: 40px; line-height: 63px; color: red;
+	text-align: center;
+}
+.littleshow{
+	height: 60px;
+	float: left;
+}
+.littleshow li{
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px;
+}
+
+.littleshow li.on{
+	border: 1px solid black;
+}
+
+.littleshow li img{
+	width: 60px;
+	height: 60px;
+	float: left;
+}
