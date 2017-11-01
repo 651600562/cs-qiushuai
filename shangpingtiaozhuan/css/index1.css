@@ -1,0 +1,195 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: "Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif;
+}
+.head{
+	width: 100%;
+	height: 100px;
+	background: darkgoldenrod;
+}
+.juzhong{
+	width:1000px;
+	margin: 0 auto;
+}
+.clock{
+	width: 1000px;
+	height: 40px;
+	margin:0 auto ;
+}
+.clock p{
+	line-height: 40px;
+	font-family: "Hiragino Sans GB", 冬青黑体, "Hiragino Kaku Gothic ProN", "Microsoft Yahei", Simsun, Arial, Helvetica, sans-serif;
+	color: #bfbfc1;
+	float: left;
+	font-size: 12px;
+}
+.navbox{
+	width: 750px;
+	height: 480px;
+	border: 1px solid red;
+	float: left;
+	position: relative;
+}
+.navbox ul li{
+	width: 350px;
+	height: 350px;
+	list-style: none;
+}
+.navbox ul li img{
+	width: 350px;
+	height: 350px;
+	background-size: 100%;
+	position: absolute;
+}
+.clock-1{
+	width: 380px;
+	height: 60px;
+	background: goldenrod;
+	position: absolute;
+	top: 350px;
+	left: 0;
+}
+.clock-2{
+	width: 335px;
+	height: 435px;
+	border: 1px solid gray;
+	float: right;
+	position: absolute;
+	top:0;
+	left: 380px;
+}
+.like{
+	width: 335px;
+	height: 35px;
+	border: 1px solid red;
+}
+.like img{
+	line-height: 35px;
+	float:left;
+	margin-top: 5px;
+}
+.like p{
+	float: left;
+	margin-top:3px ;
+	margin-left: 3px;
+}
+.clock-2 a{
+	color: #878787;
+	font-size: 24px;
+}
+.clock-2>p{
+	color: #333333;
+	font-size: 20px;
+}
+.like-1{
+	width: 330px;
+	height: 40px;
+	border: 1px solid khaki;
+}
+.like-1 p{
+	font-size: 12px;
+	color: #999999;
+	float: left;
+	margin-top: 5px;
+}
+.like-1 a{
+	font-size: 18px;
+	color: #1083ff;
+	float: left;
+	margin-left: 5px;
+}
+.like-2{
+	width: 300px;
+	padding-left:44px ;
+	float: left;
+}
+.fj{
+	font-size: 12px;
+	float: left;
+}
+.fj img{
+	width: 14px;
+	height: 14px;
+	background-size: 100%;
+	float: left;
+	margin-top: 3px;
+}
+.dp{
+	font-size: 12px;
+	float: left;
+}
+.dp img{
+	width: 14px;
+	height: 14px;
+	background-size: 100%;
+	float: left;
+	margin-top: 3px;
+	margin-left: 10px;
+}
+.colorCon{
+	width: 300px;
+	height: 60px;
+	float: left;
+	border: 1px solid hotpink;
+}
+.colorCon>p{
+	color: #b5b5b5;
+	font-size: 12px;
+	line-height: 60px;
+	float: left;
+}
+.colorCon-1{
+	width: 45px;
+	height: 60px;
+	float: left;
+	border: 1px solid aqua;
+	font-size: 12px;
+	color: #000;
+	text-align:center;
+}
+.colorCon img{
+	width: 34px;
+	height: 34px;
+	background-size: 100%;
+	float: left;
+	margin: 5px 5px;
+}
+.colorCon-2{
+	width: 45px;
+	height: 60px;
+	float: left;
+	border: 1px solid aqua;
+	font-size: 12px;
+	color: #000;
+	text-align:center;
+}.colorCon-3{
+	width: 45px;
+	height: 60px;
+	float: left;
+	border: 1px solid aqua;
+	font-size: 12px;
+	color: #000;
+	text-align:center;
+}
+.jia-j{
+	width: 300px;
+	height: 35px;
+	float: left;
+}
+.jia-j>p{
+	color: #b5b5b5;
+	font-size: 12px;
+	line-height: 35px;
+	float: left;
+}
+.jia-j img{
+	width: 13px;
+	height: 13px;
+	background-size: 100%;
+	margin-top: 10px;
+}
+.jia-j input{
+	width: 52px;
+	height: 24px;
+}
