@@ -19,3 +19,115 @@
    
 }
 
+.osm-cls {
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    float: left;
+    width: 840px;
+    z-index: 1;
+}
+
+.osm-cls li {
+    float: left;
+    display: block;
+    _display: inline;
+    zoom: 1;
+    position: relative;
+    padding: 6px 20px 5px 0px;
+    height: 25px;
+    border-bottom: 1px solid #ededed;
+    margin: 10px 0px -1px 0px;
+    font-size: 14px;
+}
+
+.osm-cls li a.new {
+    background-position: -173px -584px;
+    text-align: right;
+}
+
+.osm-cls li a {
+    width: 64px;
+    color: #333;
+    text-align: center;
+    display: block;
+    _display: inline;
+    zoom: 1;
+    margin-top: 1px;
+    height: 24px;
+    _border-bottom: 1px solid #fff;
+    line-height: 24px;
+    vertical-align: middle;
+    
+}
+
+.osm-price{
+	width: 142px;
+    margin: 10px 0 0;
+   	font-size: 14px;
+    text-align: right;
+    border-bottom: 1px solid #ededed;
+    position: relative;
+    float: right;
+    height: 24px;
+    padding: 7px 18px 5px 0px;
+    position: relative;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.osm-price .arrow {
+	display: block;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 12px;
+    height: 20px;
+    background-position: -188px -385px;
+    transition: transform 0.3s ease-out;
+}
+
+.osm-price:hover .arrow {
+    
+    -webkit-transform: rotateZ(-180deg);
+    -moz-transform: rotateZ(180deg);
+    -o-transform: rotateZ(180deg);
+    -ms-transform: rotateZ(180deg);
+    transform: rotateZ(180deg);
+    
+}
+
+.osm-price ul {
+    display: none;
+    width: 95px;
+    position: absolute;
+    z-index: 100000;
+    right: 0px;
+    top: 36px;
+    border: 1px solid #ededed;
+    background: #fff;
+}
+
+.osm-price:hover ul {
+    display: block;
+}
+
+.osm-price ul li a {
+    display: block;
+    
+    zoom: 1;
+    padding: 0px 10px;
+    width: 75px;
+    height: 39px;
+    color: #666;
+    border-bottom: 1px solid #ededed;
+    line-height: 39px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.osm-price ul li a.chk{
+	background: #333;
+	color: #fff;
+}
