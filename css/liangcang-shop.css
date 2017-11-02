@@ -227,7 +227,7 @@ a{
 	margin-top: 110px;
 }
 .album{
-	width: 410px;
+	width: 375px;
 	float: left;
 	padding: 5px;
 	
@@ -289,4 +289,21 @@ a{
 	width: 60px;
 	height: 60px;
 	float: left;
+}
+.showCenter{
+	width: 330px;
+	height: 530px;
+	float: left;
+	border: 1px solid red;
+}
+.like{
+	width: 330px;
+	height: 21px;
+	float: left;
+}
+.like a{
+	width: 80px;
+	height: 21px;
+	float: left;
+	
 }
