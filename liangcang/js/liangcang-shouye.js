@@ -122,3 +122,43 @@ $("#header-box-top>ul>li").each(function(index){
 		p = index
 	})
 })
+$(document).ready(function(){
+		
+		var name = $.cookie("name")
+		
+		if ($.cookie("name") != ""||$.cookie("name") != undefined) {
+			
+			if($.cookie("name") != ""){
+				$("#sign-up").get(0).innerHTML = name
+				$("#sign-in").get(0).innerHTML = "注销"
+			}
+		}
+		
+		
+		
+	})
+
+
+$("#sign-up").click(function(){
+	
+	if ($("#sign-up").get(0).innerHTML != "登录") {
+		$("#sign-up").get(0).href = "#"
+	}else{
+		$("#sign-up").get(0).href = "../login.html"
+	}
+})
+
+$("#sign-in").click(function(){
+	
+	if ($("#sign-in").get(0).innerHTML == "注册") {
+		$("#sign-in").get(0).href = "../register.html"
+	}else{
+		$("#sign-in").get(0).href = "#"
+	}
+	
+	$.cookie("name","",{expires: 7, path: "/"})
+	
+	$("#sign-up").get(0).innerHTML ="登录"
+	$("#sign-in").get(0).innerHTML ="注册"
+	
+})

@@ -72,16 +72,51 @@
 			//返回结果
 			$.post(url,data,function(str){
 				if(str.code == 0){
+					//保存账号
+					$.cookie("name"	,$("#phonetext").val(),{expires: 7, path: "/"})
+				    
+						
+					//如果勾选了自动登录，保存密码
 					if ($("#checkBox").is(":checked")) {
-						$.cookie("name",$("#phonetext").val(),{expires: 7})
+						$.cookie("word",$("#password").val(),{expires: 7, path: "/"})
 						
 					}
-					alert("登录成功")
-					document.location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
+					console.log(str)
+					location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
 				}else{
 					alert(str.message)
 				}
 			})
 		
 	})
-	console.log($.cookie("name"))
+	
+	var oPhone = document.getElementById("phonetext")
+	var oPassword = document.getElementById("password")
+	
+	$(document).ready(function(){
+		
+		var name = $.cookie("name")
+		var word = $.cookie("word")
+		
+		if (word == undefined) {
+			word = ""
+		}
+		oPhone.value = name
+		oPassword.value = word
+		
+		var url = "http://h6.duchengjiu.top/shop/api_user.php"
+			//参数
+			var data ={
+				status:"login",
+				username:$("#phonetext").val(),
+				password:$("#password").val()
+			}
+		
+			//返回结果
+			$.post(url,data,function(str){
+				if(str.code == 0){
+					console.log(str)
+					document.location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
+				}
+			})
+	})
