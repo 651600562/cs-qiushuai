@@ -2,8 +2,9 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>良仓.美好生活</title>
-		<link href="css/liangcang-shop.css" rel="stylesheet"/>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/liangcang-shouye.css"/>
+		<link rel="stylesheet" href="css/aShop.css" />
 	</head>
 	<body>
 		<div id="talk"><a href="javascript:">联系客服</a></div>
@@ -13,8 +14,8 @@
 				<a class="logo" href="#"></a>
 				<ul>
 					<li class="sign-up" >
-						<a href="#" id="sign-up">登陆</a>
-						<a href="#" id="sign-in">注册</a>
+						<a href="../login.html" id="sign-up">登陆</a>
+						<a href="../register.html" id="sign-in">注册</a>
 					</li>
 					<li class="line"></li>
 					<li class="header-gouwu gouwuche">
@@ -57,9 +58,9 @@
 			<div class="header-body-box">
 				<div class="header-body-box-top" id="header-box-top">
 					<ul>
-						<li class="homePage"><a href="#">首页</a></li>
+						<li class="homePage"><a href="liangcang-shouye-cs-qiushuai.html">首页</a></li>
 						<li class="subLi">
-							<a href="#">商店</a>
+							<a href="liangcang-shop-cs-qiushuai.html">商店</a>
 							<div class="subShop" id="shop">
 								<ul>
 									<li>
@@ -236,41 +237,86 @@
 						<a id="search-logo" class="bg-photo"></a>
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		<div id="main">
-			<div class="album">
-				<div class="bigShow"><img src="img/396432.jpg"/></div>
-				<div class="little-show">
-					<a href="javascript:" class="pre">&lt;</a>
-					<a href="javascript:" class="next">&gt;</a>
-					<div class="img-box">
-						<ul class="littleshow">
-							<li class="on"><img src="img/396432.jpg"/></li>
-							<li><img src="img/396433.jpg"/></li>
-							<li><img src="img/396434.jpg"/></li>
-							<li><img src="img/396435.jpg"/></li>
-							<li><img src="img/396436.jpg"/></li>
-							<li><img src="img/396437.jpg"/></li>
-							<li><img src="img/396438.jpg"/></li>
-							
+				
+				
+				
+				
+				<div class="shopShow" id="shop-box">
+					<div id="picBox" class="picbox">
+						<ul>
+							<li><img src="" /></li>
 						</ul>
+						
 					</div>
+					<div class="priceBox">
+							
+						</div>
+					
+					
+				</div>
+				
+				
+				
+				
+				
+				<div id="pagers">
+					<a href="liangcang-shop-cs-qiushuai.html" target="_blank" class="more bg-photo"></a>
 					
 				</div>
 				
 			</div>
-			
-			<div class="showCenter">
-				
-			</div>
-			
-			<div class="resemble">
-				
+		
+			<div id="service">
+				<a href="#" class="bg-photo">
+					<p class="hand bg-photo" style="left: 0;" id="ahand"></p>
+				</a>
+				<div class="slogen">
+					<dl class="fore1">
+						<dt class="bg-photo"></dt>
+						<dd>
+							<p class="chinesetop">全球精品</p>
+							<p class="english">Global Selections</p>
+							<p class="clr"></p>
+						</dd>
+					</dl>
+					<dl class="fore2">
+						<dt class="bg-photo"></dt>
+						<dd>
+							<p class="chinesetop">正品保证</p>
+							<p class="english">Authenticity Guaranteed</p>
+							<p class="clr"></p>
+						</dd>
+					</dl>
+					<dl class="fore3">
+						<dt class="bg-photo"></dt>
+						<dd>
+							<p class="chinesetop">全场包邮</p>
+							<p class="english">Free Delivery</p>
+							<p class="clr"></p>
+						</dd>
+					</dl>
+					<dl class="fore4">
+						<dt class="bg-photo"></dt>
+						<dd>
+							<p class="chinesetop phonehm bg-photo"></p>
+							<p class="english">工作日 09:00-18:00</p>
+							<p class="clr"></p>
+						</dd>
+					</dl>
+					<p class="clr"></p>
+				</div>
 			</div>
 		</div>
+		
+		
+		
 	</body>
-	<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/shop.js" type="text/javascript" charset="utf-8"></script>
 </html>
+<script src="js/jquery-3.2.1.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/liangcang-shouye.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/getAShop.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var p = 8;
+</script>

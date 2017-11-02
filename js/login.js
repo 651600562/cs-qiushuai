@@ -53,12 +53,15 @@
 			$(".passwordshow").get(0).innerHTML = "明文密码"
 		}else{
 			$("#password").get(0).type = "password"
-			$(".passwordshow").get(0).innerHTML = "隐藏密码"
+			
 		}
 		
 	})
 	
 //点击登录
+
+
+
 	$("#loginbtn").click(function(){
 		//请求数据
 			//地址
@@ -73,11 +76,13 @@
 			$.post(url,data,function(str){
 				if(str.code == 0){
 					if ($("#checkBox").is(":checked")) {
+						
 						$.cookie("name",$("#phonetext").val(),{expires: 7})
 						
+						
 					}
-					alert("登录成功")
-					document.location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
+					
+					//document.location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
 				}else{
 					alert(str.message)
 				}

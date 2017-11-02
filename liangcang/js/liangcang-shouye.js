@@ -122,3 +122,10 @@ $("#header-box-top>ul>li").each(function(index){
 		p = index
 	})
 })
+
+
+
+$(document).ready(function(){console.log($.cookie("name"))})
+
+	/*<a href="login.html" id="sign-up">登陆</a>
+	<a href="register.html" id="sign-in">注册</a>*/
