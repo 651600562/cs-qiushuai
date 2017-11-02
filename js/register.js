@@ -79,6 +79,7 @@
 				if(str.code == 0){
 					//账号密码如果符合要求 g为ture 否则为false
 					alert("注册成功")
+					window.location.href = "login.html"
 				}else{
 					alert(str.message)
 				}

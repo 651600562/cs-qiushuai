@@ -55,7 +55,7 @@
 			$("#password").get(0).type = "password"
 			$(".passwordshow").get(0).innerHTML = "隐藏密码"
 		}
-		console.log(a)
+		
 	})
 	
 //点击登录
@@ -72,10 +72,16 @@
 			//返回结果
 			$.post(url,data,function(str){
 				if(str.code == 0){
+					if ($("#checkBox").is(":checked")) {
+						$.cookie("name",$("#phonetext").val(),{expires: 7})
+						
+					}
 					alert("登录成功")
+					document.location.href = "liangcang/liangcang-shouye-cs-qiushuai.html"
 				}else{
 					alert(str.message)
 				}
 			})
 		
 	})
+	console.log($.cookie("name"))
